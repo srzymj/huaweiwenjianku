@@ -1,0 +1,136 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style-type: none;font-family: Times New Roman;}
+body{
+  width:100%;
+}
+header{
+  width:100%;
+  height:67px;
+  background:#222;
+
+}
+header .header_in{
+  width:74%;
+  height:67px;
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+}
+header .header_in p{
+  border-left:2px solid #fff;
+  color:#fff;
+  margin-left:18px;
+  padding-left:18px;
+}
+header .header_in img{
+  width:139px;
+  height:33px;
+}
+.box{
+  width:100%;
+  height:700px;
+  /* background: #888; */
+}
+.zhuti{
+  width:74%;
+  height:598px;
+  background: #fff;
+  margin:0 auto;
+}
+.zhuti .zhuti_top_left{
+  display:block;
+  width:146px;
+  height:35px;
+  display:flex;
+  float:left;
+  align-items: center;
+  margin-top:30px;
+  justify-content: center;
+  background:#aaa;
+  color:#fff;
+  margin-right:20px;
+}
+.zhuti .zhuti_top_left span{
+  display:block;
+  width:20px;
+  height:20px;
+  background:url(../image/sprite.1.0.3.png) 2px -188px no-repeat;
+}
+.zhuti_top_right{
+  margin-top:30px;
+  float:right;
+  font-size:14px;
+}
+.zhuti_top_right a{
+  color:blue;
+}
+.biaodan{
+  /* background:pink; */
+  width:50%;
+  height:500px;
+  margin:0 auto;
+  position: relative;
+  top:69px;
+  /* display:flex; */
+  /* justify-content: center; */
+  /* display: flex; */
+}
+#zhuce{
+  color:#fff;
+  font-size:14px;
+  background-color:red;
+  width:200px;
+  height:40px;
+  border-radius: 20px;
+  border:none;
+  margin-left:124px;
+
+}
+.lanmu{
+  width:100%;
+  height:42px;
+  border-radius: 21px;
+  border:1px solid #bbb;
+  margin:11px 0;
+  display:flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.lanmu div:first-child {
+  width:123px;
+  height:42px;
+  border-right:1px solid #bbb;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.lanmu input{
+  width:126px;
+  height:28px;
+  border:none;
+  margin:0 20px;
+}
+.null{
+  width:100%;
+  height:150px;
+  border-bottom: 1px solid #ccc;
+  margin:0 auto;
+}
+footer{
+  height:98px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  flex-direction: column;
+  margin:0 auto;
+}
+footer p{
+  font-size:14px;
+  color:#aaa;
+ 
+}
+/* .tishi{
+  display: block;
+  width:200px;
+  height:28px;
+} */

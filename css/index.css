@@ -2,6 +2,7 @@
 body{
   width:100%;
 }
+
 /* header*/
 header{
   min-width:1200px;
@@ -44,6 +45,7 @@ header #topbanner{
 }
 .header_top li{
   float:left; 
+  position: relative;
 }
 .header_top_right{
   width:395px;
@@ -61,14 +63,67 @@ header #topbanner{
 .header_top_caidan{
   padding:10px;
   background:#fff;
-  position: relative;
-  left:-10%;
+  position: absolute;
+  right:1px;
   z-index: 1;
+  border-radius: 5px;
   display:none;
+  text-align: center;
 }
-.header_top_caidan a{
+.heeader_top .three{
+  padding:10px;
+  background:#fff;
+  position: absolute;
+  right:1px;
+  z-index: 1;
+  border-radius: 5px;
+  display:none;
+  display:flex;
+  justify-content: flex-start;
   
 }
+.phonema{
+  display:flex;
+  justify-content: space-between;
+  display:none;
+}
+.phonema ul li p{
+  margin-left:10px;
+  line-height: 20px;
+}
+.phonema li{
+  display:flex;
+  justify-content: space-between;
+  margin-top:12px;
+}
+.phonema img{
+  width:90px;
+  height:90px;
+}
+.phonema p{
+  display:flex;
+  flex-direction:column;
+}
+.header_top_caidan p{
+ white-space: nowrap;
+ /* min-width: 80px; */
+ display:flex;
+ flex-direction:column;
+}
+.header_top_caidan p h3{
+  width:100%;
+}
+.header_top_caidan a{
+  border:none;
+  display:flex;
+  justify-content: space-between;
+}
+
+#gouwuche{
+  width:180px;
+
+}
+
 /* header_bom */
 .header_bom{
   width:100%;
@@ -135,9 +190,10 @@ header a:hover{
   min-width:1200px;
   width:100%;
   height:550px;
+  position: relative;
 }
 .banner img{
-  min-width:1200px;
+  /* min-width:1200px; */
   width:100%;
   margin:0 auto;
 }
@@ -153,6 +209,171 @@ header a:hover{
                 url("../image/Y6oQj5dXu7i8y6meTjZI.jpg")  no-repeat ,
                 url("../image/mHtZ56CMIg1nDLdIrUBb.jpg")  no-repeat ;          
 }  
+
+/* 轮播图上的菜单 */
+/* .bannercaidan{
+  border-radius: 10px;
+  width:auto;
+  background:pink;
+  position: relative;
+  left:20px;
+  top:48px;
+  display:flex;
+  justify-content: flex-start;
+} */
+/* .bannercaidan_left,.bannercaidan_right{
+  padding:0px 16px;
+  background: #fff;
+  float:left;
+} */
+/* #hhh{
+  display:flex;
+  width:80%;
+  background:blue;
+} */
+/* .bannercaidan_left p{
+  font-size:16px;
+  color:#888;
+}
+.bannercaidan_left span{
+  font-size:14px;
+  margin-right:5px;
+  color:#aaa;
+}
+.bannercaidan_left a{
+  display:block;
+  margin:28px 0;
+  line-height: 20px;
+}
+.bannercaidan_left a p:hover{
+  color:#111;
+}
+.bannercaidan_left a span:hover{
+  color:#111;
+}
+.bannercaidan_left{
+  height:440px;
+}
+.bannercaidan_right{
+  display:flex;
+  flex-direction: column;
+  height:440px;
+  background:red;
+} */
+/* .bannercaidan_right  li{
+  display:flex;
+  align-items: center;
+  margin:5px;
+  padding:10px 0; 
+  width:160px;
+  height:78px;
+}
+.bannercaidan_right li:last-child a{
+  width:80px;
+  height:18px;
+  text-align: center;
+} */
+/* #sbox{
+  width:0;
+  height:0;
+  border:20px solid;
+  border-left:red;
+}
+.bannercaidan_right  img{
+  
+  width: 78px;
+  height:78px;
+}
+#abox{
+  background:green;
+  display:flex;
+  height:440px;
+}
+.bannercaidan_right a{
+  display:block;
+  font-size: 12px;
+  color:#666;
+} */
+.bbox{
+  position: relative;
+}
+
+.ibox{
+  position:absolute;
+  height:440px;
+  left:20px;
+  top:50px;
+  display:flex;
+  border-radius: 10px;
+  width:85%;
+  background-color: red;
+}
+.ileft{
+  width:20%;
+  height:440px;
+  border-radius:10px;
+  background-color:   blue;
+}
+.iright{
+  flex:1;
+  border-radius: 10px;
+  display:flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color:yellowgreen;
+  flex-direction:   column;
+}
+.ibox .abox a{
+  display:block;
+  margin-right:9px;
+}
+.ibox .abox{
+    padding: 12px 0 13px 0;
+    margin: 0;
+    margin-left: 25px;
+    width: 150px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    height: 47px;
+    position: relative;
+}
+.ibox .abox .a01{
+  font-size:16px;
+  color:#888;
+  margin-bottom:2px;
+}
+.ibox .abox .ibt a{
+  font-size:14px;
+  color:#888;
+  line-height:
+}
+.ibox .abox .ibt {
+  display:flex;
+  width:175px
+}
+.iright img{
+  width:78px;
+  height:78px;
+  display:block;
+}
+.aabox{
+  background-color:   yellow;
+  padding:8px;
+  margin:8px;
+  width:25%;
+}
+.aabox span{
+  width:50px;
+  height:30px;
+  display:block;
+  float:left;
+  line-height:80px;
+  margin-left:20px;
+}
+.aabox img{
+  display:block;
+  float:left;
+}
+
 
 /* 轮播图下的小框框 */
 
@@ -744,4 +965,25 @@ footer{
   width:200px;
   height:60px;
   margin-left:70px;
+}
+.rightbottom{
+  background:#fff;
+  width:32px;
+  height:128px;
+  position: fixed;
+  right:0px;
+  bottom:0px;
+  display:flex;
+  flex-direction: column;
+}
+.rightbottom a{
+  display:block;
+  width:32px;
+  height:32px;
+}
+.rightbottom span{
+  display:block;
+  width:32px;
+  height:32px;
+  background:url(../image/icon-common.png) 13px 12px no-repeat;
 }

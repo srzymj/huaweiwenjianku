@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/zhuce.css">
+</head>
+<body>
+  <header>
+    <div class="header_in">
+      <img src="image/head-top.png" alt="">
+      <p><b>华为商城</b></p>
+    </div>
+  </header>
+  <div class="box">
+    <div class="zhuti">
+      <a class="zhuti_top_left" href=""> <span></span>手机号</a>
+      <a class="zhuti_top_left" href=""> <span></span>电子邮箱</a>
+      <p class="zhuti_top_right">已有华为账号<a href="">登录</a></p>
+      
+    <div class="biaodan">
+      <div class="lanmu"> 
+        <div>国家/地区</div>
+        <div>中国</div>
+      </div>
+      <div class="lanmu"> 
+        <div>+86中国</div>
+        <div>
+          <input id="userphone" type="text" placeholder="请输入手机号"><span class="tishi"></span>
+        </div>
+      </div>
+      <div class="lanmu"> 
+        <div></div>
+        <div>点击按钮进行验证</div>
+      </div>
+      <div class="lanmu"> 
+        <div>短信验证码</div>
+        <div>
+          <input id="useryzm" type="text" placeholder="请输入5位短信验证码"><span class="tishi"></span>
+          <a href="">获取验证码</a>
+        </div>
+      </div>
+      <div class="lanmu"> 
+        <div>密码</div>
+        <div>
+            <input id="userpassword" type="text" placeholder="请输入密码"><span class="tishi"></span>
+        </div>
+      </div>
+      <div class="lanmu"> 
+        <div>确认密码</div>
+        <div>
+            <input id="queren" type="text" placeholder="请再次输入密码"><span class="tishi"></span>
+        </div>
+      </div>
+      <div class="lanmu"> 
+        <div>出生日期</div>
+        <div></div>
+      </div>
+      
+      <input id="zhuce" type="button" value="注册">
+    </div>
+      <div class="null">
+
+      </div>
+
+     
+    </div>
+    
+  </div>
+  <footer>
+      
+      <p>华为帐号用户协议 | 关于华为帐号与隐私的声明 | 常见问题</p><br>
+      <p> Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</p>
+     
+  </footer>
+  
+  
+</body>
+</html>
+<script>
+  document.getElementsById("zhuce").onclick = function(){
+		//1、创建对象
+		let xhr =new XMLHttpRequest();
+
+		//2、设置请求参数
+		xhr.open("post","loginCheck.php",true);
+
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				
+				if(xhr.responseText="1"){
+				
+					location.href = "login.html";
+			
+				}
+			}
+				
+		}
+		
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		
+		let str = `userphone=${$("#userphone").value}&xmpassword=${$("#password").value}`;
+		xhr.send(str);
+	}
+
+
+</script>
